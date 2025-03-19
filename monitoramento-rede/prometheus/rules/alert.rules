@@ -1,0 +1,30 @@
+# Alert Rules
+groups:
+- name: network-alerts
+  rules:
+  - alert: HighLatency
+    expr: network_latency > 100
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: High network latency detected
+      description: Network latency is above 100ms for 5 minutes
+
+  - alert: PacketLoss
+    expr: network_packet_loss > 5
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: High packet loss detected
+      description: Packet loss is above 5% for 5 minutes
+
+  - alert: TargetDown
+    expr: up == 0
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: Monitoring target is down
+      description: Target has been down for more than 5 minutes
