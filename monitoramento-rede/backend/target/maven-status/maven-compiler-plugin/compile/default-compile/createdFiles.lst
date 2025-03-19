@@ -1,0 +1,6 @@
+com\monitoramento\metrics\NetworkMetrics.class
+com\monitoramento\model\NetworkStatus.class
+com\monitoramento\MonitoramentoRedeApplication.class
+com\monitoramento\service\NetworkMonitoringService.class
+com\monitoramento\config\RabbitMQConfig.class
+com\monitoramento\controller\NetworkController.class
