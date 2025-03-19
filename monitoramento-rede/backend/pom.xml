@@ -16,6 +16,9 @@
     <name>monitoramento-rede</name>
     <description>Sistema de Monitoramento de Rede</description>
 
+    <!-- Define o empacotamento como JAR -->
+    <packaging>jar</packaging>
+
     <properties>
         <java.version>17</java.version>
     </properties>
